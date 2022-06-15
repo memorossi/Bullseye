@@ -67,7 +67,7 @@ public class Cañon : MonoBehaviour
     { 
        GameObject bullet = Instantiate(prefabBala, posicionInicial.position , posicionInicial.rotation) as GameObject;
        rb = bullet.GetComponent<Rigidbody>();
-       rb.AddForce(Vector3.forward  * forceToAdd);
+       rb.AddForce(new Vector3 (-1,0,0)  * forceToAdd);
         Debug.Log("Disparo");
        
      }
